@@ -12,6 +12,7 @@
         "php": "^8.2",
         "laravel/framework": "^11",
         "laravel/tinker": "^2.9",
+        "mews/captcha": "^3.3",
         "statamic/cms": "^5.0",
         "statamic/eloquent-driver": "^4.7"
     },
