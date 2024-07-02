@@ -1,0 +1,286 @@
+%YAML 1.1
+---
+# statamic-form.asset_containers
+-
+  id: 1
+  handle: "assets"
+  title: "Assets"
+  disk: "assets"
+  settings: "{\"allow_uploads\":true,\"allow_downloading\":true,\"allow_moving\":true,\"allow_renaming\":true,\"create_folders\":true,\"search_index\":null,\"source_preset\":null,\"warm_presets\":null,\"validation_rules\":[]}"
+  created_at: "2024-06-30 16:13:52"
+  updated_at: "2024-06-30 16:13:52"
+# statamic-form.blueprints
+-
+  id: 1
+  namespace: null
+  handle: "default"
+  data: "{\"fields\":[{\"field\":{\"type\":\"markdown\",\"display\":\"Content\",\"localizable\":true},\"handle\":\"content\"}]}"
+  created_at: "2024-06-30 16:14:16"
+  updated_at: null
+-
+  id: 2
+  namespace: "C:.laragon.www.statamic-form.resources.blueprints.assets"
+  handle: "assets"
+  data: "{\"title\":\"Asset\",\"tabs\":{\"main\":{\"sections\":[{\"fields\":[{\"handle\":\"alt\",\"field\":{\"display\":\"Alt Text\",\"type\":\"text\",\"instructions\":\"Description of the image\"}}]}]}}}"
+  created_at: "2024-06-18 09:47:01"
+  updated_at: "2024-06-18 09:47:01"
+-
+  id: 3
+  namespace: "C:.laragon.www.statamic-form.resources.blueprints"
+  handle: "default"
+  data: "{\"title\":\"Default\",\"tabs\":{\"main\":{\"sections\":[{\"fields\":[{\"handle\":\"content\",\"field\":{\"type\":\"markdown\",\"display\":\"Content\",\"localizable\":true}},{\"handle\":\"author\",\"field\":{\"type\":\"users\",\"display\":\"Author\",\"default\":\"current\",\"localizable\":true,\"max_items\":1}},{\"handle\":\"template\",\"field\":{\"type\":\"template\",\"display\":\"Template\",\"localizable\":true}}]}]}}}"
+  created_at: "2024-06-18 09:47:01"
+  updated_at: "2024-06-18 09:47:01"
+-
+  id: 4
+  namespace: "C:.laragon.www.statamic-form.resources.blueprints"
+  handle: "user"
+  data: "{\"title\":\"User\",\"tabs\":{\"main\":{\"sections\":[{\"fields\":[{\"handle\":\"name\",\"field\":{\"type\":\"text\",\"display\":\"Name\"}},{\"handle\":\"email\",\"field\":{\"type\":\"text\",\"input\":\"email\",\"display\":\"Email Address\"}},{\"handle\":\"roles\",\"field\":{\"type\":\"user_roles\",\"width\":50}},{\"handle\":\"groups\",\"field\":{\"type\":\"user_groups\",\"width\":50}},{\"handle\":\"avatar\",\"field\":{\"type\":\"assets\",\"max_files\":1,\"container\":\"assets\"}}]}]}}}"
+  created_at: "2024-06-18 09:47:01"
+  updated_at: "2024-06-18 09:47:01"
+-
+  id: 5
+  namespace: "collections.forms"
+  handle: "form"
+  data: "{\"tabs\":{\"main\":{\"display\":\"Main\",\"sections\":[{\"display\":\"Form\",\"fields\":[{\"handle\":\"title\",\"field\":{\"type\":\"text\",\"required\":true,\"validate\":[\"required\"]}},{\"handle\":\"name\",\"field\":{\"type\":\"text\",\"display\":\"Name\"}},{\"handle\":\"email\",\"field\":{\"type\":\"text\",\"display\":\"Email\"}},{\"handle\":\"captcha\",\"field\":{\"type\":\"text\",\"display\":\"Captcha\"}}],\"__count\":0}],\"__count\":0},\"sidebar\":{\"display\":\"Sidebar\",\"sections\":[{\"fields\":[{\"handle\":\"slug\",\"field\":{\"type\":\"slug\",\"localizable\":true,\"validate\":\"max:200\"}},{\"handle\":\"parent\",\"field\":{\"type\":\"entries\",\"collections\":[\"forms\"],\"max_items\":1,\"listable\":false,\"localizable\":true}}],\"__count\":0}],\"__count\":1}},\"title\":\"Form\"}"
+  created_at: "2024-06-30 16:20:29"
+  updated_at: "2024-07-01 14:56:30"
+-
+  id: 6
+  namespace: "forms"
+  handle: "users"
+  data: "{\"tabs\":{\"main\":{\"display\":\"Main\",\"sections\":[{\"fields\":[{\"handle\":\"name\",\"field\":{\"type\":\"text\",\"display\":\"Name\"}},{\"handle\":\"email\",\"field\":{\"type\":\"text\",\"display\":\"Email\"}}],\"__count\":0}],\"__count\":0}}}"
+  created_at: "2024-06-30 16:54:39"
+  updated_at: "2024-06-30 16:55:21"
+# statamic-form.collections
+-
+  id: 1
+  handle: "pages"
+  title: "Pages"
+  settings: "{\"routes\":\"{parent_uri}\\/{slug}\",\"slugs\":true,\"title_formats\":[],\"mount\":null,\"dated\":false,\"sites\":[\"default\"],\"template\":null,\"layout\":null,\"inject\":[],\"search_index\":null,\"revisions\":false,\"default_status\":true,\"structure\":{\"root\":true},\"sort_dir\":null,\"sort_field\":null,\"taxonomies\":null,\"propagate\":true,\"past_date_behavior\":\"public\",\"future_date_behavior\":\"public\",\"preview_targets\":[{\"label\":\"Entry\",\"format\":\"{permalink}\",\"refresh\":true}],\"origin_behavior\":\"select\"}"
+  created_at: "2024-06-18 09:47:01"
+  updated_at: "2024-06-18 09:47:01"
+-
+  id: 2
+  handle: "forms"
+  title: "Forms"
+  settings: "{\"routes\":null,\"slugs\":true,\"title_formats\":[],\"mount\":null,\"dated\":false,\"sites\":null,\"template\":\"default\",\"layout\":\"layout\",\"inject\":[],\"search_index\":null,\"revisions\":false,\"default_status\":true,\"structure\":{\"root\":false},\"sort_dir\":\"asc\",\"sort_field\":null,\"taxonomies\":[],\"propagate\":false,\"past_date_behavior\":\"public\",\"future_date_behavior\":\"private\",\"preview_targets\":[{\"id\":\"F9sPUMpV\",\"label\":\"Entry\",\"format\":\"{permalink}\",\"refresh\":true}],\"origin_behavior\":\"select\"}"
+  created_at: "2024-06-30 16:18:12"
+  updated_at: "2024-06-30 16:18:49"
+# statamic-form.entries
+-
+  id: "15ee4b9a-ab63-4f3a-8d4f-7d62b03cd985"
+  site: "default"
+  origin_id: null
+  published: 1
+  slug: null
+  uri: null
+  date: null
+  order: 1
+  collection: "forms"
+  blueprint: "form"
+  data: "{\"title\":\"2024-07-01 15:52:09\",\"name\":\"Seto\",\"email\":\"seto@gmail.com\",\"captcha\":\"dzxzZe\"}"
+  created_at: "2024-07-01 15:52:09"
+  updated_at: "2024-07-01 15:52:09"
+-
+  id: "d731568d-e68c-4e31-8981-2b2bd87d01f3"
+  site: "default"
+  origin_id: null
+  published: 1
+  slug: null
+  uri: null
+  date: null
+  order: 1
+  collection: "forms"
+  blueprint: "form"
+  data: "{\"title\":\"2024-07-01 15:26:52\",\"name\":\"joko\",\"email\":\"joko@gmail.com\",\"captcha\":\"n8umcq\"}"
+  created_at: "2024-07-01 15:26:52"
+  updated_at: "2024-07-01 15:26:52"
+-
+  id: "f0b26b3b-c3dc-4ea0-b08f-81a84bbbeeeb"
+  site: "default"
+  origin_id: null
+  published: 1
+  slug: null
+  uri: null
+  date: null
+  order: 1
+  collection: "forms"
+  blueprint: "form"
+  data: "{\"title\":\"2024-07-01 15:18:40\",\"name\":\"agus\",\"email\":\"agusprnytx@gmail.com\",\"captcha\":\"p9ut49\"}"
+  created_at: "2024-07-01 15:18:40"
+  updated_at: "2024-07-01 15:18:40"
+-
+  id: "home"
+  site: "default"
+  origin_id: null
+  published: 1
+  slug: "home"
+  uri: "/"
+  date: null
+  order: 1
+  collection: "pages"
+  blueprint: "pages"
+  data: "{\"title\":\"Home\",\"template\":\"home\",\"content\":\"## Welcome to your brand new Statamic site!\\n\\nNot sure where to do next? Here are a few ideas, but feel free to explore in your own way, in your own time.\\n\\n- [Jump into the Control Panel](\\/cp) and edit this page or begin setting up your own collections and blueprints.\\n- [Head to the docs](https:\\/\\/statamic.dev) and learn how Statamic works.\\n- [Watch some Statamic videos](https:\\/\\/youtube.com\\/statamic) on YouTube.\\n- [Join our Discord chat](https:\\/\\/statamic.com\\/discord) and meet thousands of other Statamic developers.\\n- [Start a discussion](https:\\/\\/github.com\\/statamic\\/cms\\/discussions) and get answers to your questions.\\n- [Star Statamic on Github](https:\\/\\/github.com\\/statamic\\/cms) if you enjoy using it!\\n\"}"
+  created_at: "2024-06-30 16:14:40"
+  updated_at: "2024-06-30 16:14:40"
+# statamic-form.forms
+-
+  id: 2
+  handle: "users"
+  title: "users"
+  settings: "{\"store\":true,\"email\":[],\"honeypot\":\"honeypot\"}"
+  created_at: "2024-06-30 16:50:55"
+  updated_at: "2024-06-30 16:51:00"
+# statamic-form.form_submissions
+-
+  id: 1719766716.6479
+  form: "users"
+  data: "{\"name\":\"agus\",\"email\":\"agus@example.com\"}"
+  created_at: "2024-06-30 16:58:36.633384"
+  updated_at: "2024-06-30 16:58:36.648089"
+-
+  id: 1719767208.7159
+  form: "users"
+  data: "{\"name\":\"joko\",\"email\":\"joko@gmail.com\"}"
+  created_at: "2024-06-30 17:06:48.712275"
+  updated_at: "2024-06-30 17:06:48.716024"
+-
+  id: 1719767373.6261
+  form: "users"
+  data: "{\"name\":\"seto\",\"email\":\"seto@gmail.com\"}"
+  created_at: "2024-06-30 17:09:33.622571"
+  updated_at: "2024-06-30 17:09:33.626266"
+-
+  id: 1719767430.8862
+  form: "users"
+  data: "{\"name\":\"safira\",\"email\":\"safira@gmail.com\"}"
+  created_at: "2024-06-30 17:10:30.883562"
+  updated_at: "2024-06-30 17:10:30.886323"
+-
+  id: 1719767502.0839
+  form: "users"
+  data: "{\"name\":\"nuni\",\"email\":\"nuni@gmail.com\"}"
+  created_at: "2024-06-30 17:11:42.080807"
+  updated_at: "2024-06-30 17:11:42.084017"
+-
+  id: 1719767521.2542
+  form: "users"
+  data: "{\"name\":\"dio\",\"email\":\"dio@gmail.com\"}"
+  created_at: "2024-06-30 17:12:01.251554"
+  updated_at: "2024-06-30 17:12:01.254335"
+# statamic-form.migrations
+-
+  id: 1
+  migration: "0001_01_01_000000_create_users_table"
+  batch: 1
+-
+  id: 2
+  migration: "0001_01_01_000001_create_cache_table"
+  batch: 1
+-
+  id: 3
+  migration: "0001_01_01_000002_create_jobs_table"
+  batch: 1
+-
+  id: 4
+  migration: "2024_03_07_100000_create_asset_containers_table"
+  batch: 1
+-
+  id: 5
+  migration: "2024_03_07_100000_create_asset_table"
+  batch: 2
+-
+  id: 6
+  migration: "2024_03_07_100000_create_tokens_table"
+  batch: 3
+-
+  id: 7
+  migration: "2024_03_07_100000_create_blueprints_table"
+  batch: 4
+-
+  id: 8
+  migration: "2024_03_07_100000_create_collections_table"
+  batch: 5
+-
+  id: 9
+  migration: "2024_03_07_100000_create_navigation_trees_table"
+  batch: 6
+-
+  id: 10
+  migration: "2024_03_07_100000_create_entries_table_with_string_ids"
+  batch: 7
+-
+  id: 11
+  migration: "2024_03_07_100000_create_fieldsets_table"
+  batch: 8
+-
+  id: 12
+  migration: "2024_03_07_100000_create_forms_table"
+  batch: 9
+-
+  id: 13
+  migration: "2024_03_07_100000_create_form_submissions_table"
+  batch: 10
+-
+  id: 14
+  migration: "2024_05_15_100000_modify_form_submissions_id"
+  batch: 10
+-
+  id: 15
+  migration: "2024_03_07_100000_create_globals_table"
+  batch: 11
+-
+  id: 16
+  migration: "2024_03_07_100000_create_navigations_table"
+  batch: 12
+-
+  id: 17
+  migration: "2024_03_07_100000_create_terms_table"
+  batch: 13
+-
+  id: 18
+  migration: "2024_03_07_100000_create_taxonomies_table"
+  batch: 14
+-
+  id: 19
+  migration: "2024_03_07_100000_create_global_variables_table"
+  batch: 15
+-
+  id: 20
+  migration: "2024_06_30_161648_statamic_auth_tables"
+  batch: 16
+# statamic-form.trees
+-
+  id: 1
+  handle: "pages"
+  type: "collection"
+  locale: "default"
+  tree: "[{\"entry\":\"home\"}]"
+  settings: "{\"initial_path\":\"C:\\/laragon\\/www\\/statamic-form\\/content\\/trees\\/collections\\/pages.yaml\"}"
+  created_at: "2024-06-18 09:47:01"
+  updated_at: "2024-06-18 09:47:01"
+-
+  id: 2
+  handle: "forms"
+  type: "collection"
+  locale: "default"
+  tree: "[{\"entry\":\"fba3babb-bcdf-4260-9992-0f5c5c0b8323\"}]"
+  settings: "{\"initial_path\":null}"
+  created_at: "2024-06-30 16:49:06"
+  updated_at: "2024-07-01 15:15:55"
+# statamic-form.users
+-
+  id: "88d86e71-a579-4016-b34f-feb6fd9e2a4f"
+  name: "agus"
+  email: "agus@example.com"
+  email_verified_at: null
+  password: "$2y$12$H76ID0f0VKIGgX2x0p2df.gnztYbc78r70JJA361lLz33TBQ2L/Oe"
+  remember_token: "bFpq4HHWwhojDBgAZDI4nEbVn2PYIwcfDTY0A5pg7sh09vhqPdgeS0awsZNO"
+  created_at: "2024-06-30 16:17:23"
+  updated_at: "2024-06-30 16:20:01"
+  super: 1
+  avatar: null
+  preferences: "{\"theme\":\"light\"}"
+  last_login: "2024-07-01 14:03:31"
+...

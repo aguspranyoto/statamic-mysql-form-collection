@@ -1,0 +1,29 @@
+{
+    "name": "aguud/export-collection",
+    "description": "A Statamic addon to export collections to CSV",
+    "type": "statamic-addon",
+    "autoload": {
+        "psr-4": {
+            "Aguud\\ExportCollection\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Export Collection",
+            "description": "Export Statamic collections to CSV"
+        },
+        "laravel": {
+            "providers": [
+                "Aguud\\ExportCollection\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "statamic/cms": "^5.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    }
+}
