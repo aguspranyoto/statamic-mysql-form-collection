@@ -67,21 +67,19 @@
         <table class="w-full bg-white shadow-md overflow-hidden">
             <thead class="bg-black text-white">
                 <tr>
-                    <th class="py-3 px-4 uppercase font-semibold text-sm">Id</th>
-                    <th class="py-3 px-4 uppercase font-semibold text-sm">Title</th>
                     <th class="py-3 px-4 uppercase font-semibold text-sm">Name</th>
                     <th class="py-3 px-4 uppercase font-semibold text-sm">Email</th>
                     <th class="py-3 px-4 uppercase font-semibold text-sm">Captcha</th>
+                    <th class="py-3 px-4 uppercase font-semibold text-sm">View detail</th>
                 </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
                 {{ collection:forms }}
                 <tr class="hover:bg-gray-100">
-                    <td class="py-4 px-6">{{ id }}</td>
-                    <td class="py-4 px-6">{{ title }}</td>
                     <td class="py-4 px-6">{{ name }}</td>
                     <td class="py-4 px-6">{{ email }}</td>
                     <td class="py-4 px-6">{{ captcha }}</td>
+                    <td class="py-4 px-6"><a href="{{ url }}">view</a></td>
                 </tr>
                 {{ /collection:forms }}
             </tbody>
